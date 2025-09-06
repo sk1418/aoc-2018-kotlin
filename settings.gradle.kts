@@ -1,1 +1,1 @@
-rootProject.name = "aoc-2017-kotlin"
+rootProject.name = "aoc-2018-kotlin"
