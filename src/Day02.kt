@@ -22,7 +22,7 @@ fun main() {
         //- Remove character i from all strings.
         //-	Put results in a Set.
         //-	If a duplicate occurs → that’s the answer.
-        
+
         // all string.length are the same
         val length = input.first().length
         for(i in 0 until length) {
