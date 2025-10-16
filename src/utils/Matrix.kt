@@ -1,6 +1,7 @@
 package utils
 
 import utils.Direction.*
+import kotlin.math.absoluteValue
 
 typealias Point = Pair<Int, Int>
 
@@ -39,6 +40,7 @@ fun Point.allAdjacents(includeDiagonals: Boolean = true) =
         }
     }
 
+infix fun Point.manhattanDistanceTo(other: Point) = (first - other.first).absoluteValue + (second - other.second).absoluteValue
 
 //Matrix related:
 open class Matrix<T : Any>(val maxX: Int, val maxY: Int, open val points: Map<Point, T>) {
